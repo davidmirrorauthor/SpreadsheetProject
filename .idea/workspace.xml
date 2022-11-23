@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="43bf5004-e704-47da-b830-625e24827b08" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpreadsheetProject.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/Cell.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/FormulaCell.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/NumberCell.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/Operations.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/Spreadsheet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/SpreadsheetManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/SpreadsheetManager_0_SpreadsheetManager_calls.puml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/SpreadsheetManager_1_createSpreadsheet_calls.puml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/SpreadsheetManager_1_getExistingSpreadsheets_calls.puml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/SpreadsheetManager_2_checkIfSpreadsheetNameExists_calls.puml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/SpreadsheetManager_2_saveSpreadsheet_calls.puml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/SpreadsheetManager_3_createSpreadsheet_calls.puml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/SpreadsheetManager_3_loadSpreadsheet_calls.puml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/SpreadsheetManager_4_deleteSpreadsheet_calls.puml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/SpreadsheetManager_4_saveSpreadsheet_calls.puml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/SpreadsheetManager_5_loadSpreadsheet_calls.puml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/SpreadsheetManager_5_showSreadsheet_calls.puml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/SpreadsheetManager_6_deleteSpreadsheet_calls.puml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/SpreadsheetManager_7_showSreadsheet_calls.puml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/TextCell.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2Hnz2Zn1OItmytJYK2iGP3wxfEb" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="upc.softarch.spreadsheetProject.Main" />
+      <module name="SpreadsheetProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="upc.softarch.spreadsheetProject.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="43bf5004-e704-47da-b830-625e24827b08" name="Changes" comment="" />
+      <created>1668935431731</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1668935431731</updated>
+      <workItem from="1668935434131" duration="3184000" />
+      <workItem from="1669215845064" duration="6221000" />
+      <workItem from="1669228142789" duration="3786000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/SpreadsheetManager.java</url>
+          <line>97</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/SpreadsheetManager.java</url>
+          <line>102</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/Main.java</url>
+          <line>88</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/Main.java</url>
+          <line>86</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

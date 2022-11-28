@@ -2,34 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="43bf5004-e704-47da-b830-625e24827b08" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpreadsheetProject.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/Cell.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/FormulaCell.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/NumberCell.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/Operations.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/Spreadsheet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/SpreadsheetManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/SpreadsheetManager_0_SpreadsheetManager_calls.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/SpreadsheetManager_1_createSpreadsheet_calls.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/SpreadsheetManager_1_getExistingSpreadsheets_calls.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/SpreadsheetManager_2_checkIfSpreadsheetNameExists_calls.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/SpreadsheetManager_2_saveSpreadsheet_calls.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/SpreadsheetManager_3_createSpreadsheet_calls.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/SpreadsheetManager_3_loadSpreadsheet_calls.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/SpreadsheetManager_4_deleteSpreadsheet_calls.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/SpreadsheetManager_4_saveSpreadsheet_calls.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/SpreadsheetManager_5_loadSpreadsheet_calls.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/SpreadsheetManager_5_showSreadsheet_calls.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/SpreadsheetManager_6_deleteSpreadsheet_calls.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/SpreadsheetManager_7_showSreadsheet_calls.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/TextCell.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/FormulaParser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/NumberConstant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/OperationTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Clase.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Prueba.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/filename.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/paco.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pepe.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/Cell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/Cell.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/FormulaCell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/FormulaCell.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/NumberCell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/NumberCell.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/Operations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/Operation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/Spreadsheet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/Spreadsheet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/SpreadsheetManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/SpreadsheetManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/SpreadsheetManager_0_SpreadsheetManager_calls.puml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/SpreadsheetManager_1_createSpreadsheet_calls.puml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/SpreadsheetManager_1_getExistingSpreadsheets_calls.puml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/SpreadsheetManager_2_checkIfSpreadsheetNameExists_calls.puml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/SpreadsheetManager_2_saveSpreadsheet_calls.puml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/SpreadsheetManager_3_createSpreadsheet_calls.puml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/SpreadsheetManager_3_loadSpreadsheet_calls.puml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/SpreadsheetManager_4_deleteSpreadsheet_calls.puml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/SpreadsheetManager_4_saveSpreadsheet_calls.puml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/SpreadsheetManager_5_loadSpreadsheet_calls.puml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/SpreadsheetManager_5_showSreadsheet_calls.puml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/SpreadsheetManager_6_deleteSpreadsheet_calls.puml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/SpreadsheetManager_7_showSreadsheet_calls.puml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/TextCell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/TextCell.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,6 +65,8 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "nodejs_package_manager_path": "npm",
+    "run.code.analysis.last.selected.profile": "pProject Default",
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
@@ -96,7 +100,10 @@
       <updated>1668935431731</updated>
       <workItem from="1668935434131" duration="3184000" />
       <workItem from="1669215845064" duration="6221000" />
-      <workItem from="1669228142789" duration="3786000" />
+      <workItem from="1669228142789" duration="4680000" />
+      <workItem from="1669490198181" duration="1516000" />
+      <workItem from="1669535424842" duration="5587000" />
+      <workItem from="1669564736296" duration="9406000" />
     </task>
     <servers />
   </component>
@@ -118,24 +125,14 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/SpreadsheetManager.java</url>
-          <line>97</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/SpreadsheetManager.java</url>
-          <line>102</line>
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/Main.java</url>
-          <line>88</line>
+          <line>119</line>
           <option name="timeStamp" value="15" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/Main.java</url>
-          <line>86</line>
-          <option name="timeStamp" value="16" />
+          <url>file://$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/FormulaCell.java</url>
+          <line>6</line>
+          <option name="timeStamp" value="18" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

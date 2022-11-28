@@ -1,24 +1,30 @@
 package upc.softarch.spreadsheetProject;
 
 public class FormulaCell extends Cell {
+    OperationTree operation_tree=null;
     public FormulaCell(String content){
         this.content=content;
-        //this.value = Float(content); //Aquí iría el parser y la generación de resultados
+        this.operation_tree=processFormula(content);
+        this.value=executeFormula();
     }
     @Override
-    public String getCell() {
+    public String getCellContent() {
         return this.content;
     }
-
+    @Override
+    public Float getCellValue() {
+        return this.value;
+    }
     @Override
     public boolean setCell(String content) {
         this.content=content;
         return true;
     }
-    public float getValue(){
-        return this.value;
+    public OperationTree processFormula(String content){
+        FormulaParser parser = new FormulaParser();
+        return parser.parseFormula(content);
     }
-    public float executeFormula(String content){
-        return this.value;
+    public Float executeFormula(){
+        return operation_tree.calculateOperation();
     }
 }

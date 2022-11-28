@@ -1,5 +1,7 @@
 package upc.softarch.spreadsheetProject;
 
+import java.io.IOException;
+import java.util.List;
 import java.util.Scanner;
 
 public class Main {
@@ -24,7 +26,7 @@ public class Main {
         System.out.println("6. Edit Cell");
         System.out.println("------------------");
     }
-    public void createSpreadsheet(){
+    public void createSpreadsheet() throws IOException {
         System.out.println("New Name File? ");
         String new_file_name = scanner.nextLine();
         boolean is_created =this.spreadsheet_manager.createSpreadsheet(new_file_name);
@@ -34,32 +36,44 @@ public class Main {
             System.out.println("The file name -"+new_file_name+".txt- already exists.");
         }
     };
-    public void loadSpreadsheet(){
+    public void loadSpreadsheet() throws IOException {
         System.out.println("Select file: ");
+        List<String> files_available = spreadsheet_manager.getExistingSpreadsheets();
         int i=1;
-        for (String file_name:spreadsheet_manager.files_available){
+        for (String file_name:files_available){
             System.out.println(Integer.toString(i)+". "+file_name);
             i++;
         }
         int file_name_index = scanner.nextInt();
-        String file_name= spreadsheet_manager.files_available.get(file_name_index - 1);
+        String file_name= files_available.get(file_name_index - 1);
         spreadsheet_manager.spreadsheet=spreadsheet_manager.loadSpreadsheet(file_name);
         System.out.println(file_name+" has been successfully loaded!");
         System.out.println();
     };
-    public void saveSpreadsheet(){};
+    public void saveSpreadsheet() throws IOException {
+        boolean is_saved=spreadsheet_manager.saveSpreadsheet();
+        if (is_saved){
+            System.out.println("File "+spreadsheet_manager.spreadsheet.file_name+" has been saved successfully;");
+        }else{
+            System.out.println("An error occured while saving "+ spreadsheet_manager.spreadsheet.file_name+" file.");
+        }
+    };
     public void showSpreadsheet(){
-        spreadsheet_manager.showSpreadsheet();
+        boolean is_shown=spreadsheet_manager.showSpreadsheet();
+        if (!is_shown){
+            System.out.println("No Spreadsheet was selected first!");
+        }
     };
     public void deleteSpreadsheet(){
         System.out.println("Select file: ");
+        List<String> files_available = spreadsheet_manager.getExistingSpreadsheets();
         int i=1;
-        for (String file_name:spreadsheet_manager.files_available){
+        for (String file_name:files_available){
             System.out.println(Integer.toString(i)+". "+file_name);
             i++;
         }
         int file_name_index = scanner.nextInt();
-        String file_name= spreadsheet_manager.files_available.get(file_name_index - 1);
+        String file_name= files_available.get(file_name_index - 1);
         boolean is_deleted=spreadsheet_manager.deleteSpreadsheet(file_name);
         if (is_deleted){
             System.out.println(file_name+" has been successfully deleted!");
@@ -72,13 +86,30 @@ public class Main {
         if(spreadsheet_manager.spreadsheet!=null){
             spreadsheet_manager.showSpreadsheet();
             System.out.println("Cell?");
-            String cell_location = scanner.nextLine();
-            spreadsheet_manager.spreadsheet.editCell(cell_location);
+            String alphanumeric_location = scanner.nextLine();
+            Cell cell = spreadsheet_manager.spreadsheet.searchCell(alphanumeric_location);
+            if (cell!=null){
+                System.out.println("Content: " + cell.content);
+                if (!(cell instanceof  TextCell)){
+                    System.out.println("Value: "+ cell.value);
+                }
+                System.out.println();
+                System.out.println("New content?");
+                String new_content=scanner.nextLine();
+                boolean is_cell_edited=spreadsheet_manager.editCell(alphanumeric_location, new_content);
+                if (is_cell_edited){
+                    System.out.println("Cell "+alphanumeric_location+" has been successfully edited.");
+                }else{
+                    System.out.println("An error occured while editing cell "+alphanumeric_location+".");
+                }
+            }else{
+                System.out.println("Cell "+alphanumeric_location+" out of range!");
+            }
         }else{
             System.out.println("No spreadsheet loaded! Please, load first one spreadsheet.");
         }
     }
-    public void run(){
+    public void run() throws IOException {
         boolean end = false;
         while (!end){
             menu();
@@ -109,7 +140,7 @@ public class Main {
         }
 
     }
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         Main m = new Main();
         m.run();
     }

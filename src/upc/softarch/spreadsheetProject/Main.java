@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class Main {
-    SpreadsheetManager spreadsheet_manager =new SpreadsheetManager();
+    SpreadsheetManager spreadsheet_manager = SpreadsheetManager.getInstance();
     Scanner scanner = new Scanner(System.in);
     public void menu(){
         System.out.println("------------------");

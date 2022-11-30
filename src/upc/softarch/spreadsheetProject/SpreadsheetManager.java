@@ -9,9 +9,16 @@ public class SpreadsheetManager {
     private int num_default_rows = 10;
     private int num_default_columns = 10;
     public Spreadsheet spreadsheet;
+    private static SpreadsheetManager instance=null;
 
-    public SpreadsheetManager(){
+    private SpreadsheetManager(){}
+    public static SpreadsheetManager getInstance(){
+        if (instance==null){
+            instance = new SpreadsheetManager();
+        }
+        return instance;
     }
+
     public List<String> getExistingSpreadsheets(){
         String current_directory = System.getProperty("user.dir");
         File f = new File(current_directory);

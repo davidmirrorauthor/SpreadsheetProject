@@ -90,7 +90,7 @@ public class Main {
             Cell cell = spreadsheet_manager.spreadsheet.searchCell(alphanumeric_location);
             if (cell!=null){
                 System.out.println("Content: " + cell.content);
-                if (!(cell instanceof  TextCell)){
+                if (!(cell instanceof CellText)){
                     System.out.println("Value: "+ cell.value);
                 }
                 System.out.println();

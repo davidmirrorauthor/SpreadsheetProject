@@ -2,11 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="43bf5004-e704-47da-b830-625e24827b08" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/SpreadsheetSingleton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/FormulaConstant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/FormulaFunction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/FormulaFunctionMAX.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/FormulaFunctionMEAN.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/FormulaFunctionMEDIAN.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/FormulaFunctionMIN.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/FormulaFunctionSUM.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/FormulaOperand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/FormulaReference.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/FormulaSymbol.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/FormulaSymbolDivide.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/FormulaSymbolMinus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/FormulaSymbolMultiply.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/FormulaSymbolPlus.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Test.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/Cell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/Cell.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/FormulaCell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/CellFormula.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/FormulaParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/FormulaParser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/NumberCell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/CellNumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/NumberConstant.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/Operation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/OperationTree.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/Spreadsheet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/Spreadsheet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/SpreadsheetManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/SpreadsheetManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/SpreadsheetSingleton.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/TextCell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/CellText.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +103,9 @@
       <workItem from="1669535424842" duration="5587000" />
       <workItem from="1669564736296" duration="9406000" />
       <workItem from="1669645231275" duration="3445000" />
-      <workItem from="1669834588818" duration="3026000" />
+      <workItem from="1669834588818" duration="3136000" />
+      <workItem from="1670250481270" duration="8544000" />
+      <workItem from="1670778652505" duration="14125000" />
     </task>
     <servers />
   </component>
@@ -107,9 +132,14 @@
           <option name="timeStamp" value="15" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/FormulaCell.java</url>
-          <line>6</line>
-          <option name="timeStamp" value="18" />
+          <url>file://$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/FormulaParser.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/FormulaFunction.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="35" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

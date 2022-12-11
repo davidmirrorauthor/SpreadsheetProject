@@ -8,17 +8,16 @@ import java.util.List;
 public class SpreadsheetManager {
     private int num_default_rows = 10;
     private int num_default_columns = 10;
-    public Spreadsheet spreadsheet;
-    private static SpreadsheetManager instance=null;
+    public static Spreadsheet spreadsheet;
+    public static SpreadsheetManager instance;
 
-    private SpreadsheetManager(){}
+    private SpreadsheetManager() {};
     public static SpreadsheetManager getInstance(){
         if (instance==null){
             instance = new SpreadsheetManager();
         }
         return instance;
     }
-
     public List<String> getExistingSpreadsheets(){
         String current_directory = System.getProperty("user.dir");
         File f = new File(current_directory);
@@ -93,14 +92,14 @@ public class SpreadsheetManager {
     public Cell getCellWithString(String content){
         Cell cell;
         if (content.isEmpty()){
-            cell = new TextCell(content);
+            cell = new CellText(content);
         } else{
             if (content.charAt(0)=='='){
-                cell = new FormulaCell(content);
+                cell = new CellFormula(content);
             }else if(isNumeric(content)){
-                cell = new NumberCell(content);
+                cell = new CellNumber(content);
             }else{
-                cell = new TextCell(content);
+                cell = new CellText(content);
             }
         }
         return cell;
@@ -130,6 +129,14 @@ public class SpreadsheetManager {
                 variable.append(character);
             }
         }
+        SpreadsheetManager.spreadsheet=spreadsheet;
+        for (List<Cell> row: spreadsheet.cells){
+            for (Cell cell : row){
+                if (cell instanceof CellFormula){
+                    ((CellFormula) cell).calculateValue();
+                }
+            }
+        }
         return spreadsheet;
     }
     public boolean deleteSpreadsheet(String file_name){
@@ -149,7 +156,7 @@ public class SpreadsheetManager {
             for (List<Cell> row_cell:this.spreadsheet.cells){
                 List<String> contents = new ArrayList<>();
                 for (Cell cell:row_cell){
-                    if(cell.value== 0.0f){
+                    if(cell.value== null){
                         contents.add(cell.content);
                     }else{
                         contents.add(String.valueOf(cell.value));

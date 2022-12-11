@@ -10,7 +10,6 @@ public class Spreadsheet {
     public Spreadsheet(String file_name){
         this.file_name=file_name;
     }
-
     public List<Integer> getCellLocationWithAlphanumericCode(String alphanumeric_position){
         char[] alphabet = "abcdefghijklmnopqrstuvwxyz".toUpperCase().toCharArray();
         String numerical_location_str = alphanumeric_position.replaceAll("[^0-9]", "");

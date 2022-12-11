@@ -1,15 +1,15 @@
 package upc.softarch.spreadsheetProject;
 
-public class TextCell extends Cell{
-    public TextCell(String content){
+public class CellText extends Cell{
+    public CellText(String content){
         this.content=content;
     }
     @Override
-    public String getCellContent() {
+    public String getContent() {
         return this.content;
     }
     @Override
-    public Float getCellValue() {
+    public Float getValue() {
         return this.value;
     }
     @Override

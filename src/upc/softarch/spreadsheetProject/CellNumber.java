@@ -1,27 +1,23 @@
 package upc.softarch.spreadsheetProject;
 
-public class NumberCell extends Cell{
+public class CellNumber extends Cell{
 
-    public NumberCell(String content){
+    public CellNumber(String content){
         this.content=content;
         this.value=Float.parseFloat(content);
     }
     @Override
-    public String getCellContent() {
+    public String getContent() {
         return this.content;
     }
     @Override
-    public Float getCellValue() {
+    public Float getValue() {
         return this.value;
     }
-
     @Override
     public boolean setCell(String content) {
         this.content=content;
         this.value=Float.parseFloat(content);
         return true;
     }
-    public float getValue(){
-        return this.value;
-    };
 }

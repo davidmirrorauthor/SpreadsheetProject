@@ -1,7 +1,7 @@
 package upc.softarch.spreadsheetProject;
 
-public class FormulaConstant extends FormulaOperand {
-    public FormulaConstant(Float value){
+public class FormulaConstantFloat extends FormulaOperand {
+    public FormulaConstantFloat(Float value){
         this.value=value;
     };
     @Override

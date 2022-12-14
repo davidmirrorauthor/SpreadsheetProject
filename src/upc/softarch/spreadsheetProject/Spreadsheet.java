@@ -45,6 +45,14 @@ public class Spreadsheet {
         }
         return cell;
     }
+    public Float getValue(String alphanumeric_code){
+        List<Integer> location=getCellLocationWithAlphanumericCode(alphanumeric_code);
+        return getValue(location.get(0),location.get(1));
+    }
+    public Float getValue(Integer row, Integer column){
+        Cell cell=this.cells.get(row).get(column);
+        return cell.getValue();
+    }
 
     public boolean updateDependencies() {
         return false;

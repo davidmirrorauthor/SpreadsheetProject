@@ -1,6 +1,11 @@
 package upc.softarch.spreadsheetProject;
 
+import java.util.List;
+
 public class FormulaFunctionMIN extends FormulaFunction {
+    public FormulaFunctionMIN(List<FormulaOperand> list_of_operands){
+        super(list_of_operands);
+    }
     public FormulaFunctionMIN(String range) {
         super(range);
     }

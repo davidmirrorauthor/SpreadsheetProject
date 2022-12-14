@@ -1,8 +1,12 @@
 package upc.softarch.spreadsheetProject;
 
 import java.util.Collections;
+import java.util.List;
 
 public class FormulaFunctionMEDIAN extends FormulaFunction {
+    public FormulaFunctionMEDIAN(List<FormulaOperand> list_of_operands){
+        super(list_of_operands);
+    }
     public FormulaFunctionMEDIAN(String range) {
         super(range);
     }

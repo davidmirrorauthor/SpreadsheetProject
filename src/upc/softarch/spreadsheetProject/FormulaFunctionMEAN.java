@@ -1,7 +1,13 @@
 package upc.softarch.spreadsheetProject;
 
+import java.util.List;
+
 public class FormulaFunctionMEAN extends FormulaFunction {
+    public FormulaFunctionMEAN(List<FormulaOperand> list_of_operands){
+        super(list_of_operands);
+    }
     public FormulaFunctionMEAN(String range) {
+
         super(range);
     }
     @Override

@@ -1,5 +1,7 @@
 package upc.softarch.spreadsheetProject;
 
+import parser.AbstractNode;
+
 public class FormulaSymbolDivide extends FormulaSymbol {
     public FormulaSymbolDivide(){};
 

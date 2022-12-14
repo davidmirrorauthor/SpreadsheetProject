@@ -1,6 +1,11 @@
 package upc.softarch.spreadsheetProject;
 
+import java.util.List;
+
 public class FormulaFunctionMAX extends FormulaFunction {
+    public FormulaFunctionMAX(List<FormulaOperand> list_of_operands){
+        super(list_of_operands);
+    }
     public FormulaFunctionMAX(String range) {
         super(range);
     }

@@ -1,5 +1,7 @@
 package upc.softarch.spreadsheetProject;
 
+import parser.AbstractNode;
+
 public class FormulaSymbolPlus extends FormulaSymbol {
     public FormulaSymbolPlus(){};
     public FormulaSymbolPlus(FormulaOperand operand_1, FormulaOperand operand_2){

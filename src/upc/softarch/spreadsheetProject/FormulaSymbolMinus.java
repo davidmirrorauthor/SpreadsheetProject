@@ -3,7 +3,7 @@ package upc.softarch.spreadsheetProject;
 public class FormulaSymbolMinus extends FormulaSymbol {
     public FormulaSymbolMinus(){};
     public FormulaSymbolMinus(FormulaOperand operand_2){
-        this.children.add(new FormulaConstant(0f));
+        this.children.add(new FormulaConstantFloat(0f));
         this.children.add(operand_2);
     }
     public FormulaSymbolMinus(FormulaOperand operand_1, FormulaOperand operand_2){

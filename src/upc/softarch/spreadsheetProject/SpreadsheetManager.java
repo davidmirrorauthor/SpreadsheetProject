@@ -1,7 +1,6 @@
 package upc.softarch.spreadsheetProject;
 import upc.softarch.spreadsheetProject.Cells.Cell;
 import upc.softarch.spreadsheetProject.Cells.CellFormula;
-import upc.softarch.spreadsheetProject.Cells.CellText;
 
 import java.io.*;
 import java.util.ArrayList;
@@ -169,8 +168,13 @@ public class SpreadsheetManager {
         List<Integer> location=this.spreadsheet.alphanumericCode2CellLocation(alphanumeric_location);
         Cell new_cell= createCellWithString(new_content, location, false);
         Cell old_cell=this.spreadsheet.getCell(location);
+        List<CellFormula> old_cell_dependants=old_cell.getDependants();
+        for(CellFormula dependant: old_cell_dependants){
+            new_cell.addDependant(dependant);
+        }
         if (location.get(0)<this.spreadsheet.getCells().size() && location.get(1)<this.spreadsheet.getCells().get(0).size()) {
             if(old_cell instanceof CellFormula && ((CellFormula) old_cell).getDependencies().size()>0){
+                List<Cell> old_cell_dependencies=((CellFormula) old_cell).getDependencies();
                 for (Cell old_dependency:((CellFormula) old_cell).getDependencies()){
                     if(!(new_cell instanceof CellFormula && ((CellFormula) new_cell).getDependencies().contains(old_dependency))){
                         old_dependency.removeDependant((CellFormula) old_cell);

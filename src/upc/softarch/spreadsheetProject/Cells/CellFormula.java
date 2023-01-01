@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 public class CellFormula extends Cell {
     private FormulaOperand operation_tree;
-    protected List<Cell> dependencies= new ArrayList<>();
+    protected List<Cell> dependencies= new ArrayList<>(); //Dependant=Subscriber; Dependency=Publisher
 
     public CellFormula(String content, List<Integer> location, boolean first_time) {
         super(content, location);

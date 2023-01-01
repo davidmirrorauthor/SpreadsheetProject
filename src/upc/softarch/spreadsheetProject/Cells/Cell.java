@@ -14,7 +14,7 @@ public class Cell{
 
     public String getContent(){return this.content;}
     public  Float getValue(){return this.value;}
-    public List<CellFormula> getDependants(){return this.dependants;}
+    public List<CellFormula> getDependants(){return this.dependants;} //Dependant=Subscriber; Dependency=Publisher
     public Cell(String content, List<Integer> location){
         this.content=content;
         this.location=location;

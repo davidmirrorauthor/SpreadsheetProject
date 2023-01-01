@@ -1,4 +1,4 @@
-package upc.softarch.spreadsheetProject;
+package upc.softarch.spreadsheetProject.Iterator;
 
 interface Iterator <T>{
     public boolean hasNext();

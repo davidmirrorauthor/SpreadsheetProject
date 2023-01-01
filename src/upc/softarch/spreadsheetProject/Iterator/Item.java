@@ -1,4 +1,4 @@
-package upc.softarch.spreadsheetProject;
+package upc.softarch.spreadsheetProject.Iterator;
 
 public class Item <T>{
     public T data;

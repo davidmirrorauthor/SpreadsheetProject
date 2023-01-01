@@ -1,13 +1,12 @@
-package upc.softarch.spreadsheetProject;
+package upc.softarch.spreadsheetProject.Formula.Functions;
+
+import upc.softarch.spreadsheetProject.Formula.FormulaOperand;
 
 import java.util.List;
 
 public class FormulaFunctionMIN extends FormulaFunction {
     public FormulaFunctionMIN(List<FormulaOperand> list_of_operands){
         super(list_of_operands);
-    }
-    public FormulaFunctionMIN(String range) {
-        super(range);
     }
     @Override
     public Float getValue() {

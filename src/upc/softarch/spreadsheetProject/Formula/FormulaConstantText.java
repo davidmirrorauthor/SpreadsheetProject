@@ -1,14 +1,12 @@
-package upc.softarch.spreadsheetProject;
+package upc.softarch.spreadsheetProject.Formula;
+
+import upc.softarch.spreadsheetProject.Formula.FormulaOperand;
 
 public class FormulaConstantText extends FormulaOperand {
     public String text;
-
     public FormulaConstantText(String text){
         this.text=text;
     }
-
     @Override
-    Float getValue() {
-        return null;
-    }
+    public Float getValue() {return null;}
 }

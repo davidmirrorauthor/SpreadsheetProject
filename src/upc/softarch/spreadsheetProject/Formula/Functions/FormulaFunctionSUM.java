@@ -1,13 +1,12 @@
-package upc.softarch.spreadsheetProject;
+package upc.softarch.spreadsheetProject.Formula.Functions;
+
+import upc.softarch.spreadsheetProject.Formula.FormulaOperand;
 
 import java.util.List;
 
 public class FormulaFunctionSUM extends FormulaFunction {
     public FormulaFunctionSUM(List<FormulaOperand> list_of_operands){
         super(list_of_operands);
-    }
-    public FormulaFunctionSUM(String range) {
-        super(range);
     }
     @Override
     public Float getValue() {

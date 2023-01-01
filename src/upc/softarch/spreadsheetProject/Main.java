@@ -1,5 +1,8 @@
 package upc.softarch.spreadsheetProject;
 
+import upc.softarch.spreadsheetProject.Cells.Cell;
+import upc.softarch.spreadsheetProject.Cells.CellText;
+
 import java.io.IOException;
 import java.util.List;
 import java.util.Scanner;
@@ -13,7 +16,7 @@ public class Main {
         if(spreadsheet_manager.spreadsheet==null){
             System.out.println("No spreadsheet loaded!");
         }else {
-            System.out.println("Spreadsheet Loaded: "+spreadsheet_manager.spreadsheet.file_name);
+            System.out.println("Spreadsheet Loaded: "+spreadsheet_manager.spreadsheet.getFileName());
         }
         System.out.println("Choose an option:");
         System.out.println();
@@ -53,9 +56,9 @@ public class Main {
     public void saveSpreadsheet() throws IOException {
         boolean is_saved=spreadsheet_manager.saveSpreadsheet();
         if (is_saved){
-            System.out.println("File "+spreadsheet_manager.spreadsheet.file_name+" has been saved successfully;");
+            System.out.println("File "+spreadsheet_manager.spreadsheet.getFileName()+" has been saved successfully;");
         }else{
-            System.out.println("An error occured while saving "+ spreadsheet_manager.spreadsheet.file_name+" file.");
+            System.out.println("An error occured while saving "+ spreadsheet_manager.spreadsheet.getFileName()+" file.");
         }
     };
     public void showSpreadsheet(){
@@ -89,9 +92,9 @@ public class Main {
             String alphanumeric_location = scanner.nextLine();
             Cell cell = spreadsheet_manager.spreadsheet.searchCell(alphanumeric_location);
             if (cell!=null){
-                System.out.println("Content: " + cell.content);
+                System.out.println("Content: " + cell.getContent());
                 if (!(cell instanceof CellText)){
-                    System.out.println("Value: "+ cell.value);
+                    System.out.println("Value: "+ cell.getValue());
                 }
                 System.out.println();
                 System.out.println("New content?");

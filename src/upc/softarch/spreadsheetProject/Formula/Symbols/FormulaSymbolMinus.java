@@ -1,7 +1,9 @@
-package upc.softarch.spreadsheetProject;
+package upc.softarch.spreadsheetProject.Formula.Symbols;
+
+import upc.softarch.spreadsheetProject.Formula.FormulaConstantFloat;
+import upc.softarch.spreadsheetProject.Formula.FormulaOperand;
 
 public class FormulaSymbolMinus extends FormulaSymbol {
-    public FormulaSymbolMinus(){};
     public FormulaSymbolMinus(FormulaOperand operand_2){
         this.children.add(new FormulaConstantFloat(0f));
         this.children.add(operand_2);

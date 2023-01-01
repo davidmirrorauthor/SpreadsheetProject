@@ -1,4 +1,6 @@
-package upc.softarch.spreadsheetProject;
+package upc.softarch.spreadsheetProject.Formula;
+
+import upc.softarch.spreadsheetProject.Formula.FormulaOperand;
 
 public class FormulaConstantFloat extends FormulaOperand {
     public FormulaConstantFloat(Float value){

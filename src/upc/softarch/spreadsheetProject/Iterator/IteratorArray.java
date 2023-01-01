@@ -1,4 +1,4 @@
-package upc.softarch.spreadsheetProject;
+package upc.softarch.spreadsheetProject.Iterator;
 
 public class IteratorArray <T> implements Iterator <T>{
     protected int i;

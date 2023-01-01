@@ -1,4 +1,4 @@
-package upc.softarch.spreadsheetProject;
+package upc.softarch.spreadsheetProject.Iterator;
 
 public class IteratorList<T> implements Iterator<T>{
     protected Item<T> item;

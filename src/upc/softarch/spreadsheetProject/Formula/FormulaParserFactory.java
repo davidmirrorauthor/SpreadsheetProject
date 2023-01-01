@@ -1,7 +1,12 @@
-package upc.softarch.spreadsheetProject;
+package upc.softarch.spreadsheetProject.Formula;
 
 import parser.AbstractFactory;
 import parser.AbstractNode;
+import upc.softarch.spreadsheetProject.Formula.Functions.*;
+import upc.softarch.spreadsheetProject.Formula.Symbols.FormulaSymbolDivide;
+import upc.softarch.spreadsheetProject.Formula.Symbols.FormulaSymbolMinus;
+import upc.softarch.spreadsheetProject.Formula.Symbols.FormulaSymbolMultiply;
+import upc.softarch.spreadsheetProject.Formula.Symbols.FormulaSymbolPlus;
 
 import java.util.List;
 

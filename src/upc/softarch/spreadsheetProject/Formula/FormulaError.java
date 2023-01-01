@@ -1,4 +1,6 @@
-package upc.softarch.spreadsheetProject;
+package upc.softarch.spreadsheetProject.Formula;
+
+import upc.softarch.spreadsheetProject.Formula.FormulaOperand;
 
 public class FormulaError extends FormulaOperand {
     private String error;
@@ -6,7 +8,7 @@ public class FormulaError extends FormulaOperand {
         this.error=error;
     }
     @Override
-    Float getValue() {
+    public Float getValue() {
         return null;
     }
 }

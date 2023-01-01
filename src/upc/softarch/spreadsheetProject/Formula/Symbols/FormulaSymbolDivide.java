@@ -1,10 +1,8 @@
-package upc.softarch.spreadsheetProject;
+package upc.softarch.spreadsheetProject.Formula.Symbols;
 
-import parser.AbstractNode;
+import upc.softarch.spreadsheetProject.Formula.FormulaOperand;
 
 public class FormulaSymbolDivide extends FormulaSymbol {
-    public FormulaSymbolDivide(){};
-
     public FormulaSymbolDivide(FormulaOperand operand_1, FormulaOperand operand_2){
         this.children.add(operand_1);
         this.children.add(operand_2);

@@ -2,10 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="43bf5004-e704-47da-b830-625e24827b08" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/Iterator/Container.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Test.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/Cells/Cell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/Cells/Cell.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/Cells/CellFormula.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/Cells/CellFormula.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/Iterator/Item.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/Iterator/Iterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/Iterator/Iterator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/Iterator/IteratorArray.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/Iterator/IteratorList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/Spreadsheet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/Spreadsheet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/SpreadsheetManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/SpreadsheetManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -95,7 +99,8 @@
       <workItem from="1671480323534" duration="1564000" />
       <workItem from="1671550423244" duration="2390000" />
       <workItem from="1671630872516" duration="12792000" />
-      <workItem from="1672571876561" duration="2293000" />
+      <workItem from="1672571876561" duration="2548000" />
+      <workItem from="1674895602290" duration="5209000" />
     </task>
     <servers />
   </component>
@@ -133,13 +138,8 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/SpreadsheetManager.java</url>
-          <line>172</line>
-          <option name="timeStamp" value="87" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/upc/softarch/spreadsheetProject/SpreadsheetManager.java</url>
-          <line>168</line>
-          <option name="timeStamp" value="89" />
+          <line>157</line>
+          <option name="timeStamp" value="91" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

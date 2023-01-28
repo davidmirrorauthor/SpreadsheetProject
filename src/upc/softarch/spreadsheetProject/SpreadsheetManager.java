@@ -1,6 +1,7 @@
 package upc.softarch.spreadsheetProject;
 import upc.softarch.spreadsheetProject.Cells.Cell;
 import upc.softarch.spreadsheetProject.Cells.CellFormula;
+import upc.softarch.spreadsheetProject.Iterator.Iterator;
 
 import java.io.*;
 import java.util.ArrayList;
@@ -66,12 +67,16 @@ public class SpreadsheetManager {
     }
     public boolean saveSpreadsheet() throws IOException {
         StringBuilder content = new StringBuilder();
-        for (List<Cell> row: this.spreadsheet.getCells()){
-            for (Cell cell: row){
-                content.append(cell.getContent());
-                content.append(";");
+        int n_column=0;
+        for(Iterator iter = this.spreadsheet.getIterator();iter.hasNext();){
+            Cell cell =(Cell)iter.next();
+            content.append(cell.getContent());
+            content.append(";");
+            n_column++;
+            if (n_column==this.spreadsheet.getTotalColumns()){
+                content.append("\n\r");
+                n_column=0;
             }
-            content.append("\n\r");
         }
         FileWriter file = new FileWriter(this.spreadsheet.getFileName(), false);
         file.write(content.toString());
@@ -139,16 +144,21 @@ public class SpreadsheetManager {
     }
     public boolean showSpreadsheet(){
         if (this.spreadsheet!=null){
-            for (List<Cell> row_cell:this.spreadsheet.getCells()){
-                List<String> contents = new ArrayList<>();
-                for (Cell cell:row_cell){
-                    if(cell.getValue()== null){
-                        contents.add(cell.getContent());
-                    }else{
-                        contents.add(String.valueOf(cell.getValue()));
-                    }
+            List<String> contents = new ArrayList<>();
+            int n_column=0;
+            for (Iterator iter = this.spreadsheet.getIterator(); iter.hasNext();){
+                Cell cell = (Cell)iter.next();
+                if(cell.getValue()== null){
+                    contents.add(cell.getContent());
+                }else {
+                    contents.add(String.valueOf(cell.getValue()));
                 }
-                System.out.println(contents);
+                n_column++;
+                if (n_column==this.spreadsheet.getTotalColumns()) {
+                    System.out.println(contents);
+                    contents = new ArrayList<>();
+                    n_column=0;
+                }
             }
             return true;
         }else{

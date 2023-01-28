@@ -3,17 +3,24 @@ import upc.softarch.spreadsheetProject.Cells.Cell;
 import upc.softarch.spreadsheetProject.Cells.CellFormula;
 import upc.softarch.spreadsheetProject.Cells.CellNumber;
 import upc.softarch.spreadsheetProject.Cells.CellText;
+import upc.softarch.spreadsheetProject.Iterator.Container;
+import upc.softarch.spreadsheetProject.Iterator.Iterator;
+
 import java.util.ArrayList;
 import java.util.List;
 import static upc.softarch.spreadsheetProject.Utils.UtilsAlphabet.getAlphabet;
 import static upc.softarch.spreadsheetProject.Utils.UtilsMath.isNumeric;
 
-public class Spreadsheet {
+public class Spreadsheet implements Container {
     private List<List<Cell>> cells = new ArrayList<>();
     private String file_name;
+    private int total_rows;
+    private int total_columns;
+    private int total_cells;
     public Spreadsheet(String file_name){
         this.file_name=file_name;
     }
+
     public List<Integer> alphanumericCode2CellLocation(String alphanumeric_position){
         char[] alphabet=getAlphabet();
         String numerical_location_str = alphanumeric_position.replaceAll("[^0-9]", "");
@@ -97,5 +104,38 @@ public class Spreadsheet {
             }
         }
         return cell;
+    }
+    public int getTotalRows(){return cells.size();}
+    public int getTotalColumns(){return cells.get(0).size();}
+    public int getTotalCells(){return getTotalRows()*getTotalColumns();}
+
+    @Override
+    public Iterator getIterator() {
+        return new SpreadsheetHorizontalIterator();
+    }
+    private class SpreadsheetHorizontalIterator implements Iterator{
+        int index;
+
+        @Override
+        public boolean hasNext() {
+            if(index < getTotalCells()){
+                return true;
+            }
+            return false;
+        }
+        @Override
+        public Object next() {
+            if(this.hasNext()){
+                index++;
+                int total_columns=getTotalColumns();
+                int index_row= (int)Math.ceil((float)index/(float)total_columns);
+                int index_column =  index%total_columns;
+                if (index_column==0){
+                    index_column=total_columns;
+                }
+                return cells.get(index_row-1).get(index_column-1);
+            }
+            return null;
+        }
     }
 }
